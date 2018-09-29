@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<svs id="svs" flg_enable="opt_online">
+		<opt_local>
+			<port>10008</port>
+		</opt_local>
+		<opt_online>
+			<port>10008</port>
+		</opt_online>
+	</svs>
+	<dbs id="dbs" flg_enable="opt_online">
+		<opt_local>
+			<host>localhost</host>
+			<port>3306</port>
+			<user>root</user>
+			<pass>888888</pass>
+		</opt_local>
+		<opt_online>
+			<host>data-net.mysql.rds.aliyuncs.com</host>
+			<port>3306</port>
+			<user>lsadmin</user>
+			<pass>99LRN4Gi$$8Png7jGs</pass>
+		</opt_online>
+	</dbs>
+	<jedis id="jedis" flg_enable="opt_online">
+		<opt_local>
+			<host>127.0.0.1</host>
+			<port>6379</port>
+			<pass></pass>
+			<index></index>
+		</opt_local>
+		<opt_online>
+			<host>redis_db_lsadmin</host>
+			<port>6379</port>
+			<pass></pass>
+			<index>3</index>
+		</opt_online>
+	</jedis>
+</config>
